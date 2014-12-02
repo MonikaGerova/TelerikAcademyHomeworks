@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Select</h1>
+<div id="result"></div>
+
+<script src="handlebars-v2.0.0.js"></script>
+<script id="template" type="text/x-handlebars-template">
+    <select>
+        {{#options}}
+            <option value="{{value}}">{{text}} <img /></option>
+        {{/options}}
+    </select>
+</script>
+<script src="dynamicSelect.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Handlebars table</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-spacing: 0;
+        }
+        th,td{
+            border: 1px solid black;
+            width: 20px;
+        }
+        .title{
+            width: 250px;
+        }
+        .date{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+    <script src="handlebars-v2.0.0.js"> </script>
+    <script id="template" type="text/x-handlebars-template">
+        <table >
+            <tr>
+                <th>№</th>
+                <th>Title</th>
+                <th>Date #1</th>
+                <th>Date #2</th>
+            </tr>
+            {{#rows}}
+            <tr>
+                <td class="num">{{num}}</td>
+                <td class="title">{{title}}</td>
+                <td class="date">{{date1}}</td>
+                <td class="date">{{date2}}</td>
+            </tr>
+            {{/rows}}
+        </table>
+    </script>
+    <script src="tableHandlebars.js"></script>
+</body>
+</html>

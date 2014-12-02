@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div,ul,li,table,tr,td,p,span,strong{
+            border: 1px solid black;
+            width: 100px;
+           // height: 20px;
+        }
+        #result{
+            width: 400px;
+            border: none;
+
+        }
+    </style>
+</head>
+<body>
+    <h3> Please input the ELEMENT you want to insert, and  el (after or before it (if it exists)) you want to add the ELEMENT ,
+        separated by comma and space and push one of the buttons
+        <br/>
+        Example: p, div
+
+    </h3>
+
+
+    <input type="text" id="input" />
+    <button id="insertBefore">Insert Element before</button>
+    <button id="insertAfter">Insert Element after </button>
+
+    <div id="wrong"></div>
+
+    <div id="result">
+
+
+    <div id="div">DIV</div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+
+        <div class="container">
+            <h2>Greetings</h2>
+            <div class="inner">Hello</div>
+            <div class="inner">Goodbye</div>
+        </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="insertElements.js"></script>
+</body>
+</html>
